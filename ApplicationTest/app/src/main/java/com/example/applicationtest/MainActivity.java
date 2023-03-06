@@ -107,11 +107,22 @@ public class MainActivity extends AppCompatActivity {
                 resultOutput.setText("Try higher");
             } else if (userEnterNumber == pcGuessedNumber) {
                 resultOutput.setText("You guessed!");
+                newGameBtn.setVisibility(View.VISIBLE);
                 tries = 0;
             }
         }
 
+        inputNumber.setText("");
+
         triesIsZero();
+    }
+
+    public void newGame(View view) {
+        randNumber();
+        resultOutput.setText("New number guessed");
+        tries = 5;
+        triesView.setText("Tries: " + tries);
+        newGameBtn.setVisibility(View.GONE);
     }
 
     public void hideKeyboard(View view) {
