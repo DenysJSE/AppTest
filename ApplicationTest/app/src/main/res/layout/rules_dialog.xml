@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:text="Welcome to Game!\n\n
+PC guessed number from 1 to 10\n\n
+You have 5 tries to guess number\n\n
+You can enter any number but\n
+please - be smart and follow\n
+the rules\n\n
+GOOD LUCK!"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/closeDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Close"
+            android:textColor="@color/white"
+            android:background="@drawable/guess_btn"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingHorizontal="15dp"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

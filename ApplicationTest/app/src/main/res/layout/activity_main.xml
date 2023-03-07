@@ -14,8 +14,10 @@
         android:layout_marginTop="9dp">
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/startPage"
+            android:onClick="backToStartPage"
             android:layout_width="50dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:drawableStart="@drawable/baseline_home_24"
             android:paddingLeft="4dp"
             android:textColor="@color/white"
@@ -71,6 +73,7 @@
             android:layout_marginTop="25dp"
             android:background="@drawable/edittext"
             android:ems="8"
+            android:cursorVisible="false"
             android:hint="Enter Number"
             android:inputType="number"
             android:maxLength="2"

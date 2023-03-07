@@ -109,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
                 resultOutput.setText("You guessed!");
                 newGameBtn.setVisibility(View.VISIBLE);
                 tries = 0;
+                inputNumber.setFocusable(false);
             }
         }
 
@@ -123,10 +124,15 @@ public class MainActivity extends AppCompatActivity {
         tries = 5;
         triesView.setText("Tries: " + tries);
         newGameBtn.setVisibility(View.GONE);
+        inputNumber.setFocusableInTouchMode(true);
     }
 
     public void hideKeyboard(View view) {
         InputMethodManager imm =(InputMethodManager)getSystemService(Activity.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+    }
+
+    public void backToStartPage(View view) {
+        onBackPressed();
     }
 }
